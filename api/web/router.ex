@@ -3,7 +3,7 @@ defmodule Peepblog.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
-    plug PlugCors, [origins: ["localhost:4200"]]
+    plug PlugCors, [origins: ["localhost:5100"]]
   end
 
   scope "/", Peepblog do
