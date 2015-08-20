@@ -2,7 +2,9 @@
 <ul>
   {{#each model as |post|}}
   <li>
-    {{post.title}}
+    {{#link-to 'posts.post' post}}
+      {{post.title}}
+    {{/link-to}}
   </li>
   {{/each}}
 </ul>
