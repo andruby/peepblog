@@ -35,5 +35,6 @@ defmodule Peepblog.Endpoint do
     key: "_api_key",
     signing_salt: "LNkxkzOi"
 
+  plug PlugCors
   plug Peepblog.Router
 end
